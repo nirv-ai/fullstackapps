@@ -1,0 +1,20 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "start": {
+      "dependsOn": ["^types", "types"]
+    },
+    "types": {
+      "dependsOn": ["eslint"],
+      "outputs": ["lib/**/*.d.ts", "dist/**/*.d.ts"],
+      "cache": true,
+      "inputs": ["src/**/*.tsx", "src/**/*.ts", ".eslintrc.cjs"]
+    },
+    "lint": {},
+    "eslint": {
+      "cache": true,
+      "inputs": [".eslintrc.cjs"]
+    },
+    "pretty": {}
+  }
+}

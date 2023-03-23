@@ -1,0 +1,11 @@
+.dockerignore
+.git
+.gitignore
+.turbo
+*.Dockerfile
+build
+dist
+docker-compose.yml
+lib
+node_modules
+npm-debug.log

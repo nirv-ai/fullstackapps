@@ -1,0 +1,7 @@
+{
+  "directory": ["src"],
+  "delete": true,
+  "location": "all",
+  "local": false,
+  "structure": "flat"
+}

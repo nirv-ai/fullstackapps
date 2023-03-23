@@ -1,0 +1,14 @@
+{
+  "extends": "../apps.backend.tsconfig.json",
+  "references": [
+    { "path": "../../packages/nirvai-web-data/tsconfig.json" },
+    { "path": "../../packages/nirvai-web-types/tsconfig.json" }
+  ],
+  "include": ["src/**/*", "src/**/*.json"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "src",
+    "outDir": "./dist",
+    "typeRoots": ["./typings", "./node_modules/@types"]
+  }
+}

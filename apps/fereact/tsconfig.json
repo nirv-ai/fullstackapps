@@ -1,0 +1,17 @@
+{
+  "extends": "../apps.frontend.tsconfig.json",
+  "references": [
+    { "path": "../../packages/nirvai-web-data/tsconfig.json" },
+    { "path": "../../packages/nirvai-web-dialogs/tsconfig.json" },
+    { "path": "../../packages/nirvai-web-elements/tsconfig.json" },
+    { "path": "../../packages/nirvai-web-forms/tsconfig.json" },
+    { "path": "../../packages/nirvai-web-layout/tsconfig.json" },
+    { "path": "../../packages/nirvai-web-search/tsconfig.json" }
+  ],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": "src",
+    "typeRoots": ["./typings", "./node_modules/@types"]
+  }
+}

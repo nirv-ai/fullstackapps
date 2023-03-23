@@ -1,0 +1,9 @@
+.dockerignore
+.gitignore
+**/*.log
+**/.git
+**/.turbo
+**/.vscode
+**/node_modules
+**/*Dockerfile
+**/*compose.yml

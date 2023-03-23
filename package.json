@@ -1,0 +1,34 @@
+{
+  "name": "nirvai-fullstackjs",
+  "packageManager": "pnpm@7.17.1",
+  "private": true,
+  "config": {
+    "NODE_OPTIONS": "--report-compact --report-filename=node-report --report-on-fatalerror --report-on-signal --report-signal=SIGUSR2 --report-uncaught-exception --pending-deprecation --trace-deprecation  --trace-exit --trace-sigint --trace-warnings --unhandled-rejections=strict --enable-source-maps --experimental-abortcontroller --experimental-fetch --experimental-import-meta-resolve --experimental-json-modules --experimental-modules --experimental-specifier-resolution=node --experimental-top-level-await --tls-max-v1.3 --tls-min-v1.3 --use-largepages=on"
+  },
+  "scripts": {
+    "start": "echo nirvai booting....",
+    "about:summary": "pnpm config list",
+    "about": "npm run-script && npm --versions && pnpm config list",
+    "eslint": "echo 'running eslint",
+    "latest": "pnpm up -r --latest",
+    "lint": "echo 'running eslint and prettier",
+    "pretty": "echo 'running prettier",
+    "proto": "pnpm -r exec $*",
+    "postinstall": "manypkg check",
+    "pkgfix": "manypkg fix"
+  },
+  "dependencies": {
+    "@babel/core": "7.20.5",
+    "@babel/plugin-syntax-flow": "7.18.6",
+    "@babel/plugin-transform-react-jsx": "7.19.0",
+    "@manypkg/cli": "0.19.2",
+    "@typescript-eslint/eslint-plugin": "5.46.1",
+    "@typescript-eslint/parser": "5.46.1",
+    "eslint": "8.29.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-react-app": "7.0.1",
+    "husky": "8.0.2",
+    "turbo": "1.6.3",
+    "typescript": "4.9.4"
+  }
+}

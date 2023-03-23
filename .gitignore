@@ -1,0 +1,28 @@
+**/*.log
+**/.turbo
+**/*.tsbuildinfo
+**/dist
+**/build
+**/node_modules
+**/.vscode
+
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*tfplan*
+# Crash log files
+crash.log
+crash.*.log
+
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# ignore vault db data
+**/data/raft
+**/vault.db
