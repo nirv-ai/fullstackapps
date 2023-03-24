@@ -31,12 +31,14 @@
 #### apis / servers
 
 - IMO anything not FE specific should be in nimlang
+  - however, JS only devs should use elysia
 - [nimlang](https://github.com/nim-lang/Nim)
 
 #### bff: backends for frontends
 
 - any service/application specifically supporting an FE app should be in JS for interoperability (from a developer perspective)
   - however this may change as adoption of and migration to nimlang continues
+- [elysia](https://elysiajs.com/)
 - [bun](https://bun.sh/)
   - deno / nodejs could be used as well
   - IMO bun should be preferred

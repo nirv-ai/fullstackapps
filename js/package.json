@@ -1,10 +1,10 @@
 {
   "name": "nirvai-fullstackjs",
-  "packageManager": "pnpm@7.17.1",
   "private": true,
-  "config": {
-    "NODE_OPTIONS": "--report-compact --report-filename=node-report --report-on-fatalerror --report-on-signal --report-signal=SIGUSR2 --report-uncaught-exception --pending-deprecation --trace-deprecation  --trace-exit --trace-sigint --trace-warnings --unhandled-rejections=strict --enable-source-maps --experimental-abortcontroller --experimental-fetch --experimental-import-meta-resolve --experimental-json-modules --experimental-modules --experimental-specifier-resolution=node --experimental-top-level-await --tls-max-v1.3 --tls-min-v1.3 --use-largepages=on"
-  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "start": "echo nirvai booting....",
     "about:summary": "pnpm config list",
