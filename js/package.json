@@ -7,10 +7,7 @@
   ],
   "scripts": {
     "start": "echo nirvai booting....",
-    "about:summary": "pnpm config list",
-    "about": "npm run-script && npm --versions && pnpm config list",
     "eslint": "echo 'running eslint",
-    "latest": "pnpm up -r --latest",
     "lint": "echo 'running eslint and prettier",
     "pretty": "echo 'running prettier",
     "proto": "pnpm -r exec $*",
@@ -30,7 +27,7 @@
     "eslint-config-react-app": "7.0.1",
     "husky": "8.0.2",
     "turbo": "1.6.3",
-    "typescript": "4.9.4"
+    "typescript": "5.0.2"
   },
   "module": "index.ts",
   "type": "module"
