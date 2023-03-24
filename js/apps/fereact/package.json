@@ -43,6 +43,6 @@
   },
   "devDependencies": {
     "react-refresh": "0.10.0",
-    "typescript": "latest"
+    "typescript": "5.0.2"
   }
 }
