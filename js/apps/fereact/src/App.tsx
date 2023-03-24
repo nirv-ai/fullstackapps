@@ -1,6 +1,8 @@
 import "./App.css";
 import logo from "./logo.svg";
 
+const whatev: string = "hello";
+
 function App() {
   return (
     <div className="App" role="main">
@@ -13,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {whatev}
         </a>
       </article>
     </div>
