@@ -41,7 +41,7 @@
 - [elysia](https://elysiajs.com/)
 - [bun](https://bun.sh/)
   - deno / nodejs could be used as well
-  - IMO bun should be preferred
+  - IMO bun should be preferred as it supports executing nimlang files via `bun:ffi`
 
 #### fe: frontends
 
