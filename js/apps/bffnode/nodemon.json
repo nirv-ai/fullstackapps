@@ -1,9 +1,0 @@
-{
-  "verbose": true,
-  "watch": ["src", "package.json", "tsconfig.json", ".env", "nodemon.json"],
-  "ignore": ["src/**/*.test.ts"],
-  "ext": "ts, mjs, js, json, tsx",
-  "legacyWatch": true,
-  "exec": "etsc && node --loader esbuild-register/loader -r esbuild-register ./src/App.ts | pino-pretty -c -f",
-  "delay": 500
-}
