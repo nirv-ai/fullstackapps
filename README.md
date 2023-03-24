@@ -32,6 +32,7 @@
 
 - IMO anything not FE specific should be in nimlang
 - [nimlang](https://github.com/nim-lang/Nim)
+- [prologue](https://github.com/planety/Prologue)
 
 #### bff: backends for frontends
 
