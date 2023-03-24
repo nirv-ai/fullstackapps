@@ -1,9 +1,13 @@
-# fullstack apps
+# fullstack apps @ NIRV
 
-- boilerplate for comparing different javascript and nimlang frameworks and how they interact
+- standard application development @ nirv.ai
 - wouldnt trust anything in this repo while **this line** exists
 
-## why nim and js
+## TLDR
+
+- NIRV uses nimlang and JS... for all application development
+
+### why nim and js
 
 > Any fool can write code that a computer can understand. Good programmers write code that humans can understand. _Martin_
 
@@ -13,26 +17,41 @@
   - searching for ultimate performance: [start here](https://www.wikihow.com/Start-Programming-in-Assembly)
   - reasonable person building profitable and competitive applications: continue reading
 
-## When opinions clash
+### When opinions clash
 
 > the hardest part in making a choice, is figuring out who to blame when things go wrong. _Master Yuan-Ma, The Book of Programming_
 
-- i tend to focus on openminded frameworks and libraries vs the opinionated toolset or kitchen sink
-- big fan of the [unix philisophy](https://en.wikipedia.org/wiki/Unix_philosophy)
+- NIRV prefers openminded frameworks and libraries vs the opinionated toolset or kitchen sink
+- adhering to the [unix philisophy](https://en.wikipedia.org/wiki/Unix_philosophy)
   - Make it easy to write, test, and run programs.
   - Write programs that do one thing and do it well.
   - Write programs to work together.
-  - Interactive use instead of batch processing.
-  - Economy and elegance of design due to size constraints ("salvation through suffering").
   - Self-supporting system: all software is built with _nimlang and js_
 
-### bff: backends for frontends
+#### apis / servers
 
-- [bun](https://bun.sh/)
+- IMO anything not FE specific should be in nimlang
 - [nimlang](https://github.com/nim-lang/Nim)
 
-### fe: frontends
+#### bff: backends for frontends
 
-- [mithril micro framework](https://mithril.js.org/)
-- [reactjs](https://react.dev/)
-- [svelte](https://svelte.dev/)
+- any service/application specifically supporting an FE app should be in JS for interoperability (from a developer perspective)
+  - however this may change as adoption of and migration to nimlang continues
+- [bun](https://bun.sh/)
+  - deno / nodejs could be used as well
+  - IMO bun should be preferred
+
+#### fe: frontends
+
+- depending on the developer skillset, scope and complexity of the FE application
+- nim developers
+  - [karax](https://github.com/karaxnim/karax)
+    - SPAs for nim
+- js developers
+  - [mithril micro framework](https://mithril.js.org/)
+    - when react / svelt is overkill
+  - [reactjs](https://react.dev/)
+    - best developer experience
+  - [svelte](https://svelte.dev/)
+    - the next GOAT of FE frameworks
+    - still a long way to go before we drop react
