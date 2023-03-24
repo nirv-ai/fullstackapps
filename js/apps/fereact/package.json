@@ -1,15 +1,45 @@
 {
-  "name": "fereact",
+  "name": "nirvai-fereact",
   "version": "0.1.79",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "web-vitals": "^3.0.3"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@emotion/react": "11.10.5",
+    "@emotion/styled": "11.10.5",
+    "@fontsource/baloo-2": "4.5.11",
+    "@fontsource/inconsolata": "4.5.9",
+    "@fontsource/indie-flower": "4.5.10",
+    "@fontsource/kelly-slab": "4.5.9",
+    "@fontsource/permanent-marker": "4.5.7",
+    "@fontsource/rubik": "4.5.13",
+    "@fontsource/shadows-into-light-two": "4.5.9",
+    "@mui/icons-material": "5.11.0",
+    "@mui/lab": "5.0.0-alpha.112",
+    "@mui/material": "5.11.0",
+    "@mui/system": "5.11.0",
+    "@tanstack/query-core": "4.20.4",
+    "@tanstack/query-sync-storage-persister": "4.20.4",
+    "@tanstack/react-query-devtools": "4.20.4",
+    "@tanstack/react-query-persist-client": "4.20.4",
+    "@tanstack/react-query": "4.20.4",
+    "@tanstack/react-table": "8.7.3",
+    "axios": "1.2.1",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.4.5",
+    "react-scripts": "5.0.1",
+    "react": "18.2.0",
+    "validator": "13.7.0",
+    "web-vitals": "3.1.0"
   },
   "devDependencies": {
     "react-refresh": "0.10.0",
