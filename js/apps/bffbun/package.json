@@ -1,8 +1,0 @@
-{
-  "name": "bffbun",
-  "module": "index.ts",
-  "devDependencies": {
-    "bun-types": "^0.5.0"
-  },
-  "type": "module"
-}
