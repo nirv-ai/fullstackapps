@@ -1,11 +1,14 @@
 export const getVars = ({ flexSize }: { flexSize: string }) => ({
   spacing: 6,
   sleepTime: {
+    // used to provide a consistent interval between FE updates
+    // e.g. wherever you use a spinner
     major: 1.5,
     normal: 1, // ensure this syncs with waitForSleep(seconds)
     minor: 0.5,
   },
   fontSizes: {
+    // consistent font sizes regardless of element type
     huge: "2rem",
     biggest: "1.7rem",
     bigger: "1.5rem",
@@ -15,6 +18,7 @@ export const getVars = ({ flexSize }: { flexSize: string }) => ({
     smaller: "0.5rem",
   },
   spaces: {
+    // consistent spacing regardless of element type
     spacing: 2,
     columnSpacing: 2,
     rowSpacing: 2,
@@ -28,6 +32,7 @@ export const getVars = ({ flexSize }: { flexSize: string }) => ({
     smallest: "0.1rem",
   },
   widths: {
+    // consistent widths AND heights, lol
     // @see https://blog.typekit.com/2016/08/17/flexible-typography-with-css-locks/
     input: flexSize,
     rowHeight: "1.5rem",

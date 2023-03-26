@@ -1,0 +1,35 @@
+{
+  "name": "@nirvai-web/data",
+  "version": "1.0.0",
+  "description": "",
+  "module": "./lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "packageManager": "pnpm@7.17.1",
+  "scripts": {
+    "about:summary": "pnpm config list 2>&1 | tee about.summary.log",
+    "about": "(npm run-script && npm --versions && pnpm config list --json) 2>&1 | tee about.log",
+    "eslint": "eslint --quiet --fix 'src/**'",
+    "latest": "pnpm up -r --latest",
+    "lint": "pnpm eslint && pnpm pretty",
+    "pretty": "prettier --ignore-unknown --write",
+    "proto": "pnpm -r exec $*",
+    "types:debug": "tsc --extendedDiagnostics",
+    "types:files": "tsc --listFilesOnly",
+    "types:watch": "tsc --build --watch",
+    "types:pkgs:watch": "pnpm types:watch",
+    "types": "tsc --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "1.3.4",
+    "date-fns": "2.29.3",
+    "validator": "13.9.0"
+  },
+  "devDependencies": {
+    "type-fest": "3.4.0",
+    "typescript": "5.0.2"
+  }
+}
