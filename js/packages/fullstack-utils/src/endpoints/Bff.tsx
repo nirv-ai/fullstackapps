@@ -2,9 +2,7 @@
  * shared routes
  */
 import axios, { type AxiosInstance } from "axios";
-import { parser } from "../Utils";
-
-const { toUrl } = parser;
+import { toUrl } from "../utils/parser";
 
 export const BFF: AxiosInstance = axios.create({
   baseURL: process.env.REACT_APP_BFF_BASE_URL,

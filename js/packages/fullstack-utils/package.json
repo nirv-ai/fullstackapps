@@ -7,13 +7,7 @@
   "types": "./lib/index.d.ts",
   "packageManager": "pnpm@7.17.1",
   "scripts": {
-    "about:summary": "pnpm config list 2>&1 | tee about.summary.log",
-    "about": "(npm run-script && npm --versions && pnpm config list --json) 2>&1 | tee about.log",
-    "eslint": "eslint --quiet --fix 'src/**'",
-    "latest": "pnpm up -r --latest",
-    "lint": "pnpm eslint && pnpm pretty",
-    "pretty": "prettier --ignore-unknown --write",
-    "proto": "pnpm -r exec $*",
+    "barrels": "barrelsby --delete",
     "types:debug": "tsc --extendedDiagnostics",
     "types:files": "tsc --listFilesOnly",
     "types:watch": "tsc --build --watch",
@@ -29,6 +23,7 @@
     "validator": "13.9.0"
   },
   "devDependencies": {
+    "barrelsby": "^2.5.1",
     "type-fest": "3.4.0",
     "typescript": "5.0.2"
   }
