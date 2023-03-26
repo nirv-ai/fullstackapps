@@ -15,6 +15,7 @@
 
 import { createTheme, responsiveFontSizes } from "@mui/material";
 
+// TODO: skipped transitions
 import { typography } from "./typography";
 import { palette } from "./palette";
 import { breakpoints } from "./breakpoints";
@@ -22,8 +23,10 @@ import { getVars } from "./vars";
 import { components } from "./components";
 
 const htmlFontSize = 32;
-// skipped transitions
+
+// for explanation of everything below this line
 // @see https://blog.typekit.com/2016/08/17/flexible-typography-with-css-locks/
+// dont change the order of these assignments
 const rangeTop = 35;
 const rangeBottom = 34;
 const range = rangeTop - rangeBottom;
@@ -34,7 +37,6 @@ const minLineHeight = 1.3;
 const lineHeightFactor = maxLineHeight - minLineHeight;
 const flexSize = `calc(${minLineHeight} + (${lineHeightFactor}) * ${upperGate})`;
 
-/// <reference path="../../../packages/nirvai-web-types/node_modules/@mui/material" />
 export const AppTheme = responsiveFontSizes(
   createTheme({
     // @ts-expect-error ignore

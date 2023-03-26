@@ -1,3 +1,4 @@
+// @see https://mui.com/material-ui/customization/theming/#custom-variables
 export const getVars = ({ flexSize }: { flexSize: string }) => ({
   spacing: 6,
   sleepTime: {

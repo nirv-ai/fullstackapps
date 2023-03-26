@@ -7,6 +7,7 @@ import { createSyncStoragePersister } from "@tanstack/query-sync-storage-persist
 
 import { Router } from "Router";
 import { reportWebVitals } from "reportWebVitals";
+import { APP_KEY } from "./constants";
 
 const root = createRoot(document.getElementById("root")!);
 // Create a client
@@ -77,8 +78,9 @@ if (typeof window !== "undefined") {
 
 const persister = createSyncStoragePersister({
   storage: window.localStorage,
-  key: "nirvai",
+  key: APP_KEY,
 });
+
 root.render(
   <StrictMode>
     <PersistQueryClientProvider

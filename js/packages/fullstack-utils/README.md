@@ -12,5 +12,5 @@
 
 ### scripts
 
-- `bun run barrelsby` recreate exports
+- `bun run barrelsby` recreate index.ts exports
 - `bun dev` start on localhost:3000
