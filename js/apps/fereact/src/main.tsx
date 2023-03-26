@@ -5,7 +5,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
 import { createSyncStoragePersister } from "@tanstack/query-sync-storage-persister";
 
-import { Router } from "./Router";
+import { Router } from "Router";
 import { reportWebVitals } from "reportWebVitals";
 
 const root = createRoot(document.getElementById("root")!);
