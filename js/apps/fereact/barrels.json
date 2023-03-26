@@ -3,5 +3,5 @@
   "delete": true,
   "location": "all",
   "local": false,
-  "structure": "filesystem"
+  "structure": "flat"
 }

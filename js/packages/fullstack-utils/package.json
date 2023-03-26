@@ -7,7 +7,7 @@
   "types": "./lib/index.d.ts",
   "packageManager": "pnpm@7.17.1",
   "scripts": {
-    "barrels": "barrelsby --delete",
+    "barrels": "barrelsby --config ./barrels.json",
     "types:debug": "tsc --extendedDiagnostics",
     "types:files": "tsc --listFilesOnly",
     "types:watch": "tsc --build --watch",

@@ -14,7 +14,7 @@
     ]
   },
   "scripts": {
-    "barrels": "barrelsby --delete"
+    "barrels": "barrelsby --config ./barrels.json"
   },
   "dependencies": {
     "@emotion/react": "11.10.6",
