@@ -18,7 +18,6 @@ export class App extends Component<AppProps, Record<string, unknown>> {
     return (
       <>
         <CssBaseline />
-
         <AppHeader />
         <Container
           disableGutters // using padding isntead
