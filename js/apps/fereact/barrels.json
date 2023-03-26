@@ -1,7 +1,8 @@
 {
-  "directory": ["src"],
   "delete": true,
-  "location": "all",
+  "directory": ["src"],
+  "include": [".*(?<!.d.ts)$"],
   "local": false,
+  "location": "all",
   "structure": "flat"
 }
