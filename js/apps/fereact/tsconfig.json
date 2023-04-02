@@ -2,9 +2,9 @@
   "extends": "../apps.frontend.tsconfig.json",
   "references": [],
   "compilerOptions": {
-    "outDir": "./dist",
+    "outDir": "dist",
     "rootDir": ".",
     "baseUrl": "src",
-    "typeRoots": ["./typings", "./node_modules/@types"]
+    "typeRoots": ["typings", "node_modules/@types"]
   }
 }
