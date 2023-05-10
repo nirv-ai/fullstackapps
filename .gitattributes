@@ -2,3 +2,4 @@
 /.yarn/plugins/** binary
 **/raft/raft.db binary
 **/vault.db binary
+**/bun.lockb binary
