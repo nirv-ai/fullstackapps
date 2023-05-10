@@ -39,7 +39,7 @@
     "incremental": true,
     "isolatedModules": false,
     "jsx": "react-jsx",
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext"],
     "module": "esnext",
     "moduleResolution": "bundler",
     "noEmit": false,
@@ -58,7 +58,6 @@
     "strictFunctionTypes": true,
     "strictNullChecks": false,
     "target": "esnext",
-    "types": ["bun-types"],
     "useUnknownInCatchVariables": true
     // "importsNotUsedAsValues": "error",
     // "noUnusedLocals": false,
