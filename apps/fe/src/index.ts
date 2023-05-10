@@ -3,7 +3,6 @@
  */
 
 export * from "./constants";
-export * from "./index";
 export * from "./main";
 export * from "./Components/index";
 export * from "./Router/index";
