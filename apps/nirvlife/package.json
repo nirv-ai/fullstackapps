@@ -15,6 +15,7 @@
     "@fontsource/permanent-marker": "4.5.7",
     "@fontsource/rubik": "4.5.13",
     "@fontsource/shadows-into-light-two": "4.5.9",
+    "@hapi/bourne": "^3.0.0",
     "@mui/icons-material": "5.11.11",
     "@mui/lab": "5.0.0-alpha.124",
     "@mui/material": "5.11.14",

@@ -5,7 +5,9 @@
 
 ## TLDR
 
-- NIRV uses nimlang and Bun... for all application development
+- HARD ADs: NIRV uses nimlang and Bun... for all application development
+- SOFT ADs:
+  - preference for react and related ecosystem, but one-offs for things like svelte are accepted
 
 ### why nim and bun
 
