@@ -38,6 +38,7 @@
     "@types/react-dom": "18.0.9",
     "@types/react-router-dom": "5.3.3",
     "barrelsby": "^2.5.1",
+    "bun-types": "canary",
     "postcss": "8.4.20",
     "postcss-flexbugs-fixes": "5.0.2",
     "react-refresh": "0.10.0",
