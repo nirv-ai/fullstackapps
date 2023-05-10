@@ -1,20 +1,9 @@
 {
-  "name": "nirvai-fereact",
-  "version": "0.1.79",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "name": "nirvlife",
+  "version": "0.1.83",
   "scripts": {
-    "barrels": "barrelsby --config ./barrels.json"
+    "barrels": "barrelsby --config ./barrels.json",
+    "dev": "bun dev"
   },
   "dependencies": {
     "@emotion/react": "11.10.6",
@@ -53,6 +42,6 @@
     "postcss-flexbugs-fixes": "5.0.2",
     "react-refresh": "0.10.0",
     "type-fest": "3.4.0",
-    "typescript": "5.0.2"
+    "typescript": "beta"
   }
 }
