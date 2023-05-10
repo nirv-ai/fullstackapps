@@ -1,6 +1,6 @@
-# fereact
+# nirvlife
 
-- frontend react app with bun
+- landing page for nirv.life
 
 ## core deps
 
