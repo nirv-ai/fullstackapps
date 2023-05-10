@@ -104,9 +104,13 @@ root.render(
           .catch((e) => console.error(e));
       }}
     >
-      <Router queryClient={queryClient} />
+      <Router key="router" queryClient={queryClient} />
       {/* @see https://tanstack.com/query/v4/docs/devtools */}
-      <ReactQueryDevtools initialIsOpen={false} position="top-right" />
+      <ReactQueryDevtools
+        key="devtools"
+        initialIsOpen={false}
+        position="top-right"
+      />
     </PersistQueryClientProvider>
   </StrictMode>
 );
