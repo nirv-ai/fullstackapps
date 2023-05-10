@@ -5,13 +5,13 @@
 
 ## TLDR
 
-- NIRV uses nimlang and JS... for all application development
+- NIRV uses nimlang and Bun... for all application development
 
-### why nim and js
+### why nim and bun
 
 > Any fool can write code that a computer can understand. Good programmers write code that humans can understand. _Martin_
 
-- nimlang and JS are the most usable and flexible languages on the planet
+- nimlang and Bun (typescript) are the most usable and flexible languages on the planet
 - anything you can build, can be built and maintained _competitively_ and _economically_
 - if you are:
   - searching for ultimate performance: [start here](https://www.wikihow.com/Start-Programming-in-Assembly)
@@ -28,32 +28,19 @@
   - Write programs to work together.
   - Self-supporting system: all software is built with _nimlang and js_
 
-#### apis / servers
+#### apis / backend apps
 
-- IMO anything not FE specific should be in nimlang
-  - however, JS only devs should use elysia
-- [nimlang](https://github.com/nim-lang/Nim)
+- first choice should be nim
+- for non nim devs
+  - edge compute: hono
+  - everything else: elysia
 
 #### bff: backends for frontends
 
 - any service/application specifically supporting an FE app should be in JS for interoperability (from a developer perspective)
-  - however this may change as adoption of and migration to nimlang continues
-- [elysia](https://elysiajs.com/)
-- [bun](https://bun.sh/)
-  - deno / nodejs could be used as well
-  - IMO bun should be preferred as it supports executing nimlang files via `bun:ffi`
+- same AD: hono for edge, elysia for heavy lifting
 
 #### fe: frontends
 
-- depending on the developer skillset, scope and complexity of the FE application
-- nim developers
-  - [karax](https://github.com/karaxnim/karax)
-    - SPAs for nim
-- js developers
-  - [mithril micro framework](https://mithril.js.org/)
-    - when react / svelt is overkill
-  - [reactjs](https://react.dev/)
-    - best developer experience
-  - [svelte](https://svelte.dev/)
-    - the next GOAT of FE frameworks
-    - still a long way to go before we drop react
+- [reactjs](https://react.dev/)
+- TBD
