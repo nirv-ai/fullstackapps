@@ -14,3 +14,15 @@ export interface CopyRefInterface
 export type CopyRefs = CopyRefInterface[];
 
 export type CopyCtaStacks = [CopyInterface, CopyRefInterface][];
+
+/**
+ * @see https://color.a11y.com/ContrastPair/?bgcolor=e5a50a&fgcolor=000000
+ *
+ */
+export interface CopyImg {
+  color: string;
+  bg?: string;
+}
+export type CopyImgDefaults = {
+  bg: "rba(0,0,0,0)";
+};
