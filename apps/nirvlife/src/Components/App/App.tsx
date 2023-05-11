@@ -3,7 +3,7 @@ import { Container, CssBaseline, ThemeProvider } from "@mui/material";
 import { Outlet, ScrollRestoration } from "react-router-dom";
 
 import { AppHeader } from "Components";
-import { APP_KEY } from "../../constants";
+import { APP_KEY } from "../../data/constants";
 import { AppTheme } from "Theme";
 
 export type AppProps = object;

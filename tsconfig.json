@@ -60,7 +60,7 @@
     "strictFunctionTypes": true,
     "strictNullChecks": false,
     "target": "esnext",
-    "types": ["bun-types"],
+    // "types": ["bun-types"],
     "useUnknownInCatchVariables": true
     // "importsNotUsedAsValues": "error",
     // "noUnusedLocals": false,
