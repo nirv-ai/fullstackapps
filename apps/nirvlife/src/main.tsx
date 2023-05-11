@@ -2,7 +2,7 @@ import { createRoot } from "react-dom/client";
 import { reportWebVitals } from "reportWebVitals";
 import { StrictMode } from "react";
 
-import { QueryProvider } from "Api";
+import { QueryProvider } from "./Api";
 import { Router } from "Router";
 
 const root = createRoot(document.getElementById("root")!);
