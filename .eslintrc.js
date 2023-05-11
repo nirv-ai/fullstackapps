@@ -15,6 +15,7 @@ export default {
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:@typescript-eslint/strict",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
     "prettier",
   ],
   // @see https://eslint.org/docs/latest/user-guide/configuring/rules

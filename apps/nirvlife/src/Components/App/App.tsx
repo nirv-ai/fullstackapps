@@ -19,16 +19,16 @@ export class App extends Component<AppProps, Record<string, unknown>> {
   render() {
     return (
       <ThemeProvider theme={AppTheme}>
-        <CssBaseline />
-        <AppHeader />
+        <CssBaseline key="baseline" />
+        <AppHeader key="header" />
         <Container
           disableGutters // using padding isntead
           id="app-container"
+          key="container"
         >
           <Outlet />
         </Container>
-        {/* @see https://reactrouter.com/en/main/components/scroll-restoration */}
-        <ScrollRestoration />
+        <ScrollRestoration key="scroll" />
       </ThemeProvider>
     );
   }

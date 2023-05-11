@@ -5,7 +5,9 @@
 
 ## TLDR
 
-- NIRV uses nimlang and Bun... for all application development
+- HARD ADs: NIRV uses nimlang and Bun... for all application development
+- SOFT ADs:
+  - preference for react and related ecosystem, but one-offs for things like svelte are accepted
 
 ### why nim and bun
 
@@ -42,5 +44,25 @@
 
 #### fe: frontends
 
+- react is still king. we took an initial look at svelte and it was deemed a lateral move vs a significant jump in performance and dev experience
+
+#### MVAs
+
+- synchronizing the minimal viable architecture across services
+
+##### BUN
+
+- [barrelsby](https://github.com/bencoveney/barrelsby)
+- [emotion](https://github.com/emotion-js/emotion/tree/main)
+- [material](https://github.com/mui/material-ui)
+- [tanstack](https://tanstack.com/)
+- [eden](https://elysiajs.com/plugins/eden/overview.html)
+- [elysia](https://elysiajs.com/introduction.html)
 - [reactjs](https://react.dev/)
-- TBD
+- [ky](https://github.com/sindresorhus/ky)
+- [kv-universal](https://github.com/sindresorhus/ky-universal)
+- [got](https://github.com/sindresorhus/got)
+
+##### NIM
+
+- dunno

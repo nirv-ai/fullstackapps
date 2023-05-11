@@ -25,6 +25,7 @@
   ],
   "compilerOptions": {
     "allowJs": true,
+    "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "assumeChangesOnlyAffectDirectDependencies": true,
     "baseUrl": ".",
@@ -39,9 +40,10 @@
     "incremental": true,
     "isolatedModules": false,
     "jsx": "react-jsx",
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext"],
     "module": "esnext",
     "moduleResolution": "bundler",
+    "moduleDetection": "force",
     "noEmit": false,
     "noErrorTruncation": false,
     "noFallthroughCasesInSwitch": false,
@@ -58,6 +60,7 @@
     "strictFunctionTypes": true,
     "strictNullChecks": false,
     "target": "esnext",
+    "types": ["bun-types"],
     "useUnknownInCatchVariables": true
     // "importsNotUsedAsValues": "error",
     // "noUnusedLocals": false,
