@@ -13,15 +13,15 @@ const createRouter = (queryClient: QueryClient) => {
     {
       path: "/",
       element: <App key="app" />,
-      errorElement: <NotFoundScreen key="notfound" />,
+      errorElement: <NotFoundScreen />,
       children: [
         {
           // pathless route enables NotFound to load within Outlet
-          errorElement: <NotFoundScreen key="notfound" />,
+          errorElement: <NotFoundScreen />,
           children: [
             {
               index: true,
-              element: <AppLandingScreen key="landing" />,
+              element: <AppLandingScreen />,
             },
           ],
         },
