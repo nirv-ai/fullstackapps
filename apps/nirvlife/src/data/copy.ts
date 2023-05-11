@@ -44,16 +44,22 @@ export const refs = [ref1, ref2, ref3, ref4];
 export const me = {
   copy: [
     "founder. failure. success story.",
-    "YC startup school, IBM Global Entrepreneur.",
+    "YC Startup School, IBM Global Entrepreneur. Application Architect",
   ],
 };
 
 export const advisor1 = {
-  copy: ["world traveler. entrepreneur.", "US Olympic swim team"],
+  copy: ["world traveler. entrepreneur. olympic medalist", "Business"],
 };
 
-export const you = {
+export const joinTeamAdvisor = {
   copy: ["intellectual. futurist. dope AF"],
   link: "on click should open some form or something",
 };
-export const team = [me, advisor1, you];
+
+export const joinTeamDevs = {
+  copy: ["co founder: PhD AI/ML", "co founder: PhD Data Science"],
+  link: "on click should go to github",
+};
+export const team = [me, advisor1];
+export const teamJoin = [joinTeamAdvisor, joinTeamDevs];
