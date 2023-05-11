@@ -22,32 +22,52 @@ export const purpose: CopyInterface = {
   copy: "open world application. for the real world",
 };
 
-export const ref1: CopyRefInterface = {
+export const goDoSucceedRef: CopyRefInterface = {
   copy: "effective decision making must be connected, contextual and continuous",
-  longform: [],
+  longform: [
+    "Too many decisions rely on the status quo",
+    "When [shit] changes, can you keep up?",
+    "reframing whats essential, rethink what to improve",
+    "Some decisions should be left to humans, others to machines",
+  ],
   link: `https://www.gartner.com/smarterwithgartner/how-to-make-better-business-decisions`,
 };
-export const ref2: CopyRefInterface = {
+export const missionRef: CopyRefInterface = {
   copy: "great decisions are shaped by consideration of many different viewpoints",
-  longform: [],
+  longform: [
+    "Find your position as a leader",
+    "Take control",
+    "Bring everyone up to a consistent level of understanding",
+    "Better decisions. Faster",
+  ],
   link: "https://hbr.org/2022/03/how-to-make-great-decisions-quickly",
 };
-export const ref3: CopyRefInterface = {
-  copy: "from decision to action, and social representation",
-  longform: [],
+export const visionRef: CopyRefInterface = {
+  copy: "from decision to action; social representation perspective",
+  longform: [
+    "The decisions we make become our realities",
+    "Make choices that solve problems",
+    "Challenge accepted norms of rationality",
+    "Take an `Action` perspective",
+  ],
   link: "https://www.jstor.org/stable/2635240",
 };
-export const ref4: CopyRefInterface = {
+export const purposeRef: CopyRefInterface = {
   copy: "open world machine learning",
-  longform: [],
+  longform: ["abc", "abc", "abc", "abc"],
   link: "https://arxiv.org/abs/2105.13448",
 };
 
 export const ctas: CopyCtas = [goDoSucceed, nirvana, vision, mission, purpose];
-export const refs: CopyRefs = [ref1, ref2, ref3, ref4];
+export const refs: CopyRefs = [
+  goDoSucceedRef,
+  missionRef,
+  visionRef,
+  purposeRef,
+];
 export const ctaStacks: CopyCtaStacks = [
-  [goDoSucceed, ref1],
-  [vision, ref3],
-  [mission, ref2],
-  [purpose, ref4],
+  [goDoSucceed, goDoSucceedRef],
+  [vision, visionRef],
+  [mission, missionRef],
+  [purpose, purposeRef],
 ];

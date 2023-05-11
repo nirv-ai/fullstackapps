@@ -44,7 +44,7 @@
 
 #### fe: frontends
 
-- react is still king. we took an initial look at svelte and it was deemed a lateral move vs a significant jump in performance and dev experience
+- react is still king. we took an initial look at svelte and it was deemed a lateral move vs a significant jump in performance or dev experience
 
 #### MVAs
 
@@ -53,15 +53,16 @@
 ##### BUN
 
 - [barrelsby](https://github.com/bencoveney/barrelsby)
-- [emotion](https://github.com/emotion-js/emotion/tree/main)
-- [material](https://github.com/mui/material-ui)
-- [tanstack](https://tanstack.com/)
 - [eden](https://elysiajs.com/plugins/eden/overview.html)
 - [elysia](https://elysiajs.com/introduction.html)
-- [reactjs](https://react.dev/)
-- [ky](https://github.com/sindresorhus/ky)
-- [kv-universal](https://github.com/sindresorhus/ky-universal)
+- [emotion](https://github.com/emotion-js/emotion/tree/main)
 - [got](https://github.com/sindresorhus/got)
+- [kv-universal](https://github.com/sindresorhus/ky-universal)
+- [ky](https://github.com/sindresorhus/ky)
+- [material](https://github.com/mui/material-ui)
+- [reactjs](https://react.dev/)
+- [tanstack](https://tanstack.com/)
+- [typefest](https://github.com/sindresorhus/type-fest)
 
 ##### NIM
 
