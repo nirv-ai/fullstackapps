@@ -9,7 +9,7 @@ const root = createRoot(document.getElementById("root")!);
 
 root.render(
   <StrictMode>
-    <QueryProvider Router={Router} />
+    <QueryProvider key="queryprovider" Router={Router} />
   </StrictMode>
 );
 

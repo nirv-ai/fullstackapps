@@ -12,16 +12,16 @@ const createRouter = (queryClient: QueryClient) => {
   return createBrowserRouter([
     {
       path: "/",
-      element: <App />,
-      errorElement: <NotFoundScreen />,
+      element: <App key="app" />,
+      errorElement: <NotFoundScreen key="notfound" />,
       children: [
         {
           // pathless route enables NotFound to load within Outlet
-          errorElement: <NotFoundScreen />,
+          errorElement: <NotFoundScreen key="notfound" />,
           children: [
             {
               index: true,
-              element: <AppLandingScreen />,
+              element: <AppLandingScreen key="landing" />,
             },
           ],
         },

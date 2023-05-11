@@ -35,7 +35,7 @@ const queryClient = new QueryClient({
       // @see https://tkdodo.eu/blog/react-query-render-optimizations
       enabled: true,
       retry: false,
-      cacheTime: 1,
+      cacheTime: cacheTimeMaxAge,
       staleTime: 1000 * 2,
       refetchInterval: false,
       refetchIntervalInBackground: false,
@@ -83,6 +83,26 @@ const persister = createSyncStoragePersister({
   key: APP_KEY,
 });
 
+const persistOptions = {
+  persister,
+  maxAge: cacheTimeMaxAge,
+  hydrateOptions: {
+    defaultOptions: {
+      queries: { retry: false },
+    },
+  },
+};
+
+const onSuccess = () => {
+  // resume mutations after initial restore from localStorage was successful
+  queryClient
+    .resumePausedMutations()
+    .then(() => {
+      queryClient.invalidateQueries().catch((e) => console.error(e));
+    })
+    .catch((e) => console.error(e));
+};
+
 /**
  * @see https://tanstack.com/query/latest/docs/react/plugins/persistQueryClient#persistqueryclientprovider
  */
@@ -90,24 +110,8 @@ export const QueryProvider = ({ Router }) => {
   return (
     <PersistQueryClientProvider
       client={queryClient}
-      persistOptions={{
-        persister,
-        maxAge: cacheTimeMaxAge,
-        hydrateOptions: {
-          defaultOptions: {
-            queries: { retry: false },
-          },
-        },
-      }}
-      onSuccess={() => {
-        // resume mutations after initial restore from localStorage was successful
-        queryClient
-          .resumePausedMutations()
-          .then(() => {
-            queryClient.invalidateQueries().catch((e) => console.error(e));
-          })
-          .catch((e) => console.error(e));
-      }}
+      persistOptions={persistOptions}
+      onSuccess={onSuccess}
     >
       <Router key="router" queryClient={queryClient} />
       {/* @see https://tanstack.com/query/v4/docs/devtools */}
