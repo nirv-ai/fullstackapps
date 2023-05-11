@@ -1,4 +1,4 @@
-import React, { type FC } from "react";
+import type { FC } from "react";
 
 export const NotFoundScreen: FC = () => {
   return <div>Oops! Not Found</div>;

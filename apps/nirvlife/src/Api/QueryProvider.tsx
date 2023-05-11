@@ -10,24 +10,19 @@ const cacheTimeMaxAge = 1000 * 60 * 60 * inHours;
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      /**
-       * return placeholder data, maps ACTION_TYPES and DATA_KEYS to locations in cache based on queryKey
-       * this will cause isLoading to always be true
-       * i.e. why show placeholder data if you want to show loading?
-       * ^ thus you need to manage isLoading imperatively at source
-       * @see https://github.com/TanStack/query/issues/1753
-       * @param param0 {Object} poop queryFn props
-       * @param param0 {string[]} poop.queryKey see tanstack docs
-       * @returns (placeholder) data from cache
-       */
-      queryFn: async ({ queryKey }) => {
-        await Promise.resolve();
+      queryFn({ queryKey }) {
         const [firstKey, secondKey] = queryKey as string[];
 
+        /**
+         * return placeholder data based on some key (currently checking first key)
+         * disables isLoading (i.e. it always returns true)
+         * thus you need to manage isLoading imperatively at source
+         * @see https://github.com/TanStack/query/issues/1753
+         */
         switch (firstKey) {
           default: {
             console.info(
-              `\n\n TODO: should we set default return for ${queryKey.toString()}`
+              `\n\n TODO: should return placeholder data for ${queryKey.toString()}`
             );
           }
         }
