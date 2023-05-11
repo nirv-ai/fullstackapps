@@ -12,7 +12,7 @@ const base = ky.create({
   },
   parseJson(data) {
     // @see https://hapi.dev/module/bourne/api/?v=3.0.0
-    return bourne.parse(data, undefined, { protoAction: "remove" });
+    return bourne.parse(data || {}, undefined, { protoAction: "remove" });
   },
 });
 
@@ -20,7 +20,6 @@ const base = ky.create({
  * const otherApi = base.extend({ blah })
  */
 
-// @ts-ignore todo
 export const api = {
   get({ url, searchParams = {}, ac = new AbortController() }) {
     const { signal } = ac;

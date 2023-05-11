@@ -1,3 +1,3 @@
 # nirvlife
 
-- landing page for nirv.life
+- NIRV.ai marketing page @ https://nirv.life

@@ -1,10 +1,14 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import type { QueryClient } from "@tanstack/react-query";
 import type { FC } from "react";
+import type { QueryClient } from "@tanstack/react-query";
 
 import { App, AppLandingScreen, NotFoundScreen } from "Components";
 
-const router = (queryClient: QueryClient) => {
+export interface RouterInterface {
+  queryClient: QueryClient;
+}
+
+const createRouter = (queryClient: QueryClient) => {
   return createBrowserRouter([
     {
       path: "/",
@@ -26,9 +30,6 @@ const router = (queryClient: QueryClient) => {
   ]);
 };
 
-export interface RouterInterface {
-  queryClient: QueryClient;
-}
 export const Router: FC<RouterInterface> = ({ queryClient }) => (
-  <RouterProvider router={router(queryClient)} />
+  <RouterProvider router={createRouter(queryClient)} />
 );
