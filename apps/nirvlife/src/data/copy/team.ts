@@ -1,28 +1,30 @@
-import { linkNirv } from ".";
-import { LinkTo } from "Library";
+import type { EmployeeInterface, Team, CopyLinkInterface, TeamJoin } from ".";
 
-export const me = {
+import { linkNirv } from ".";
+
+export const me: EmployeeInterface = {
   copy: [
     "founder. failure. success story.",
     "YC Startup School, IBM Global Entrepreneur. Application Architect",
   ],
 };
 
-export const advisor1 = {
+export const advisor1: EmployeeInterface = {
   copy: ["world traveler. entrepreneur. olympic medalist", "Business"],
 };
 
-export const joinTeamAdvisor = {
+export const joinTeamAdvisor: CopyLinkInterface = {
   copy: ["intellectual. futurist. dope AF"],
-  link: "on click should open some form or something",
+  url: linkNirv.startengine.url,
 };
 
-export const joinTeamBiz = {
+export const joinTeamBiz: CopyLinkInterface = {
   copy: ["co founder: phd sociocultural/economic anthropology"],
+  url: linkNirv.startengine.url,
 };
-export const joinTeamDevs = {
+export const joinTeamDevs: CopyLinkInterface = {
   copy: ["co founder: phd ai/ml", "co founder: phd data science"],
-  link: "on click should go to github",
+  url: linkNirv.github.url,
 };
-export const team = [me, advisor1];
-export const teamJoin = [joinTeamAdvisor, joinTeamBiz, joinTeamDevs];
+export const team: Team = [me, advisor1];
+export const teamJoin: TeamJoin = [joinTeamAdvisor, joinTeamBiz, joinTeamDevs];

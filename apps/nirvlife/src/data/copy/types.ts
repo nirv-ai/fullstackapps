@@ -8,17 +8,12 @@ export interface CopyInterface {
   url?: string;
 }
 export type CopyCtas = CopyInterface[];
-
 export interface CopyRefInterface
   extends SetRequired<CopyInterface, "longform" | "url"> {}
-
 export type CopyRefs = CopyRefInterface[];
-
 export type CopyCtaStacks = [CopyInterface, CopyRefInterface][];
-
 export interface CopyLinkInterface
   extends SetRequired<Pick<CopyInterface, "copy" | "url">, "url"> {}
-
 /**
  * @see https://color.a11y.com/ContrastPair/?bgcolor=e5a50a&fgcolor=000000
  *
@@ -30,3 +25,7 @@ export interface CopyImg {
 export type CopyImgDefaults = {
   bg: "rba(0,0,0,0)";
 };
+
+export interface EmployeeInterface extends CopyInterface {}
+export type Team = EmployeeInterface[];
+export type TeamJoin = CopyLinkInterface[];
