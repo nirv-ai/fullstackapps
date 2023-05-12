@@ -31,10 +31,14 @@ export const base64Img = async ({
     imgKey,
     new Promise((resolve) => {
       img.onerror = () => {
+        // TODO(noah): this shouldnt return a string but run the same fn as onload
         resolve(
           "https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
         );
       };
+      // TODO(noah); extract this logic to a fn for reuse in onerror
+      // TODO(noah): pretty sure we can convert an svg to base64 and drop dummyimages.com
+      // ^@see https://stackoverflow.com/questions/28450471/convert-inline-svg-to-base64-string
       img.onload = () => {
         const canvas = document.createElement("canvas");
         canvas.width = width;
