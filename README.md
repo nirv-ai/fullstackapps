@@ -63,6 +63,8 @@
 - [reactjs](https://react.dev/)
 - [tanstack](https://tanstack.com/)
 - [typefest](https://github.com/sindresorhus/type-fest)
+- [react waypoint](https://github.com/civiccc/react-waypoint)
+- [react ideal image](https://github.com/stereobooster/react-ideal-image/tree/master)
 
 ##### NIM
 

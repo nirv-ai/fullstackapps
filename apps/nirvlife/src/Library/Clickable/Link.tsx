@@ -4,8 +4,8 @@ import type { CopyLinkInterface } from "data";
 
 export interface LinkInterface extends CopyLinkInterface {
   //
-  props?: Record<string, string | number>;
   tab?: boolean;
+  [x: string]: any;
 }
 
 export const LinkTo: FC<LinkInterface> = ({
@@ -14,7 +14,7 @@ export const LinkTo: FC<LinkInterface> = ({
 
   //
   tab = false,
-  props = {},
+  ...props
 }) => (
   <a href={url} target={(tab && "_blank") || "_self"} {...props}>
     {copy}
