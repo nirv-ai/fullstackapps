@@ -1,3 +1,6 @@
+import { linkNirv } from ".";
+import { LinkTo } from "Library";
+
 export const me = {
   copy: [
     "founder. failure. success story.",
@@ -14,8 +17,11 @@ export const joinTeamAdvisor = {
   link: "on click should open some form or something",
 };
 
+export const joinTeamBiz = {
+  copy: ["co founder: phd sociocultural/economic anthropology"],
+};
 export const joinTeamDevs = {
-  copy: ["co founder: PhD AI/ML", "co founder: PhD Data Science"],
+  copy: ["co founder: phd ai/ml", "co founder: phd data science"],
   link: "on click should go to github",
 };
 export const team = [me, advisor1];

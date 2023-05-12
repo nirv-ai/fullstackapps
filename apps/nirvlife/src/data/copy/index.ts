@@ -3,5 +3,6 @@
  */
 
 export * from "./copy";
+export * from "./links";
 export * from "./team";
 export * from "./types";
