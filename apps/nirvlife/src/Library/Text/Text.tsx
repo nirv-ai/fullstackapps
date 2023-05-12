@@ -1,8 +1,13 @@
 import type { FC } from "react";
 
-export interface TextInterface {
-  t: string;
+import type { CopyInterface } from "data";
+
+export interface TextInterface extends Pick<CopyInterface, "copy"> {
+  //
+  props?: Record<string, any>;
 }
-export const Text: FC<TextInterface> = ({ t }) => (
-  <span className="ima text">{t}</span>
+export const Text: FC<TextInterface> = ({ copy, props = {} }) => (
+  <span className="ima text" {...props}>
+    {copy}
+  </span>
 );

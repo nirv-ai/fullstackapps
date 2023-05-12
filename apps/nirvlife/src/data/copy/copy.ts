@@ -30,7 +30,7 @@ export const goDoSucceedRef: CopyRefInterface = {
     "reframing whats essential, rethink what to improve",
     "Some decisions should be left to humans, others to machines",
   ],
-  link: `https://www.gartner.com/smarterwithgartner/how-to-make-better-business-decisions`,
+  url: `https://www.gartner.com/smarterwithgartner/how-to-make-better-business-decisions`,
 };
 export const missionRef: CopyRefInterface = {
   copy: "great decisions are shaped by consideration of many different viewpoints",
@@ -40,7 +40,7 @@ export const missionRef: CopyRefInterface = {
     "Bring everyone up to a consistent level of understanding",
     "Better decisions. Faster",
   ],
-  link: "https://hbr.org/2022/03/how-to-make-great-decisions-quickly",
+  url: "https://hbr.org/2022/03/how-to-make-great-decisions-quickly",
 };
 export const visionRef: CopyRefInterface = {
   copy: "from decision to action; social representation perspective",
@@ -50,12 +50,12 @@ export const visionRef: CopyRefInterface = {
     "Challenge accepted norms of rationality",
     "Take an `Action` perspective",
   ],
-  link: "https://www.jstor.org/stable/2635240",
+  url: "https://www.jstor.org/stable/2635240",
 };
 export const purposeRef: CopyRefInterface = {
   copy: "open world machine learning",
   longform: ["abc", "abc", "abc", "abc"],
-  link: "https://arxiv.org/abs/2105.13448",
+  url: "https://arxiv.org/abs/2105.13448",
 };
 
 export const ctas: CopyCtas = [goDoSucceed, nirvana, vision, mission, purpose];

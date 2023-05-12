@@ -25,4 +25,4 @@ export const joinTeamDevs = {
   link: "on click should go to github",
 };
 export const team = [me, advisor1];
-export const teamJoin = [joinTeamAdvisor, joinTeamDevs];
+export const teamJoin = [joinTeamAdvisor, joinTeamBiz, joinTeamDevs];
