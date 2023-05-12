@@ -1,6 +1,7 @@
 import type {
   CopyCtas,
   CopyInterface,
+  CopyCta,
   CopyRefInterface,
   CopyRefs,
   CopyCtaStacks,
