@@ -1,9 +1,10 @@
 import type { FC } from "react";
 
+// TODO(noah): bun has issue importing from fork?
+// ^ import IdealImage from 'react-ideal-image'
 import IdealImage from "../../../node_modules/react-ideal-image/src/index.js";
 import { useMemo, useEffect, useState } from "react";
 
-console.info("\n\n wtf is IdealImage", IdealImage);
 export interface ImgInterface {
   height: number;
   uris: string[];
@@ -83,7 +84,6 @@ export const Img: FC<ImgInterface> = ({
     if (placeholder) return null;
 
     base64Img({ width, height }).then((base64) => {
-      console.info("\n\n got base64", base64);
       if (!ignore) setPlaceholder(base64);
     });
 
@@ -92,11 +92,16 @@ export const Img: FC<ImgInterface> = ({
     };
   }, []);
 
-  console.info("\n\n wtf is placeholder", placeholder);
-  console.info("\n\n wtf is srcSet", srcSet);
+  // console.info("\n\n wtf is placeholder", placeholder);
+  // console.info("\n\n wtf is srcSet", srcSet);
   return (
     <section {...props}>
       <IdealImage
+        // TODO:(noah): this throws
+        // ^ 404 GET /logo192.png as application/octet-stream
+        // ^ Segmentation fault (core dumped)
+        // ^ maybe fk the placeholder img shiz and just use a color ;)
+        // ^ nah we should update to a svg so we can show something cool
         // placeholder={{ lqip: placeholder }}
         placeholder={{ color: "black" }}
         alt={alt}
