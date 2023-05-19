@@ -2,7 +2,7 @@ import type { FC } from "react";
 
 // TODO(noah): bun has issue importing from fork?
 // import IdealImage from "react-ideal-image";
-import IdealImage from "../../../node_modules/react-ideal-image/src/index";
+import IdealImage from "react-ideal-image/src";
 import { useMemo, useEffect, useState } from "react";
 
 export interface ImgInterface {
