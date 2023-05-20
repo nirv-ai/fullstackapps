@@ -4,7 +4,6 @@
 
 import type { Theme } from "@mui/material/styles";
 
-// TODO: just move these to fkn variables
 const primary = "#2f9ef9";
 const secondary = "#eb1e0b";
 const dark = "#141414";
