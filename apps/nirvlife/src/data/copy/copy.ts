@@ -7,10 +7,10 @@ import type {
   CopyCtaStacks,
 } from "./types";
 
-export const nirvana: CopyInterface = {
+export const slogan: CopyInterface = {
   copy: "NIRV-an-a whole lotta guts",
 };
-export const goDoSucceed: CopyInterface = {
+export const tagline: CopyInterface = {
   copy: "go. do. succeed.",
 };
 export const vision: CopyInterface = {
@@ -23,7 +23,7 @@ export const purpose: CopyInterface = {
   copy: "open world application. for the real world",
 };
 
-export const goDoSucceedRef: CopyRefInterface = {
+export const taglineRef: CopyRefInterface = {
   copy: "effective decision making must be connected, contextual and continuous",
   longform: [
     "Too many decisions rely on the status quo",
@@ -59,15 +59,10 @@ export const purposeRef: CopyRefInterface = {
   url: "https://arxiv.org/abs/2105.13448",
 };
 
-export const ctas: CopyCtas = [goDoSucceed, nirvana, vision, mission, purpose];
-export const refs: CopyRefs = [
-  goDoSucceedRef,
-  missionRef,
-  visionRef,
-  purposeRef,
-];
+export const ctas: CopyCtas = [tagline, slogan, vision, mission, purpose];
+export const refs: CopyRefs = [taglineRef, missionRef, visionRef, purposeRef];
 export const ctaStacks: CopyCtaStacks = [
-  [goDoSucceed, goDoSucceedRef],
+  [tagline, taglineRef],
   [vision, visionRef],
   [mission, missionRef],
   [purpose, purposeRef],
