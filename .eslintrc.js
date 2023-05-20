@@ -19,38 +19,27 @@ export default {
     "prettier",
   ],
   // @see https://eslint.org/docs/latest/user-guide/configuring/rules
+  // @see https://typescript-eslint.io/rules/some-rule-name-here
   // 0 off
   // 1 warn
   // 2 error
   rules: {
-    // this is javascript, not java
+    // use what makes sense
     "@typescript-eslint/prefer-nullish-coalescing": 0,
-    // fucks with bff asyncwrapper
-    "@typescript-eslint/no-misused-promises": 0,
     // force error
     "@typescript-eslint/restrict-template-expressions": 2,
-    // force error
-    "@typescript-eslint/restrict-template-expressions": 2,
-    // too many false positives
-    // or TSC does it better
+    // too many false positives/TSC does it better
     "@typescript-eslint/await-thenable": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/no-unnecessary-condition": 0,
+    "@typescript-eslint/no-unnecessary-type-assertion": 0,
+    "@typescript-eslint/no-unsafe-argument": 1,
+    "@typescript-eslint/no-unsafe-assignment": 0,
     "@typescript-eslint/no-unsafe-call": 0,
     "@typescript-eslint/no-unsafe-member-access": 0,
-    "@typescript-eslint/no-unsafe-argument": 1,
-    "@typescript-eslint/no-unsafe-assignment": 0,
-    "@typescript-eslint/no-unnecessary-type-assertion": 0,
-    "@typescript-eslint/no-non-null-assertion": 0,
-    "@typescript-eslint/no-unsafe-argument": 1,
-    "@typescript-eslint/no-unsafe-assignment": 0,
-    "@typescript-eslint/no-unnecessary-type-assertion": 0,
-    "@typescript-eslint/no-non-null-assertion": 0,
     "@typescript-eslint/no-unsafe-return": 0,
-    "@typescript-eslint/no-explicit-any": 0,
-    "@typescript-eslint/no-explicit-any": 0,
-    "@typescript-eslint/no-empty-interface": 0,
-    "@typescript-eslint/no-unnecessary-condition": 0,
-    "@typescript-eslint/ban-ts-comment": 0,
-    "@typescript-eslint/no-unnecessary-condition": 0,
-    "@typescript-eslint/ban-ts-comment": 0,
   },
 };

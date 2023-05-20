@@ -3,8 +3,10 @@ import { Container, CssBaseline, ThemeProvider } from "@mui/material";
 import { Outlet, ScrollRestoration } from "react-router-dom";
 
 import { AppHeader } from "Components";
-import { APP_KEY } from "../../constants";
+import { APP_KEY } from "data/constants";
 import { AppTheme } from "Theme";
+
+// <img src={"/img/logo_main.png"} className="App-logo" alt="logo" />
 
 export type AppProps = object;
 export class App extends Component<AppProps, Record<string, unknown>> {

@@ -2,7 +2,7 @@ import { QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
 import { createSyncStoragePersister } from "@tanstack/query-sync-storage-persister";
-import { APP_KEY } from "../constants"; // TODO(noah): shouldnt need any relative imports
+import { APP_KEY } from "../data/constants"; // TODO(noah): shouldnt need any relative imports
 
 const inHours = 24;
 const cacheTimeMaxAge = 1000 * 60 * 60 * inHours;
