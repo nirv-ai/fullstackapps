@@ -22,19 +22,19 @@ export const advisor1: EmployeeInterface = {
 
 export const joinTeamAdvisor: CopyLinkInterface = {
   copy: ["intellectual. futurist. dope AF"],
-  url: linkNirv.startengine.url,
+  url: linkNirv.corpLinkedin.url,
 };
 export const joinTeamBiz: CopyLinkInterface = {
   copy: ["co founder: phd sociocultural/economic anthropology"],
-  url: linkNirv.startengine.url,
+  url: linkNirv.corpLinkedin.url, // this should be notion
 };
 export const joinTeamDevs: CopyLinkInterface = {
   copy: [
-    "co founder: phd ai/ml",
-    "co founder: phd data science",
-    "co founder: signficant contribution to web3 community",
+    "co founder: phd ai/ml. OWML in NLP",
+    "co founder: phd data science. data engineering and data science",
+    "co founder: blockchain. signficant contribution to web3 community",
   ],
-  url: linkNirv.github.url,
+  url: linkNirv.github.url, // this should be notion
 };
 export const joinTeamPreview: CopyCtaReveal = {
   copy: ["Do you live a busy lifestyle?", "We want to hear from you"],
