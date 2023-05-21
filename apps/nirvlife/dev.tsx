@@ -1,21 +1,26 @@
 import * as path from "path";
 import { statSync } from "fs";
 import type { ServeOptions } from "bun";
+import { rm } from "node:fs/promises";
 
 const PROJECT_ROOT = import.meta.dir;
 const PUBLIC_DIR = path.resolve(PROJECT_ROOT, "public");
 const BUILD_DIR = path.resolve(PROJECT_ROOT, "build");
 
-await Bun.build({
-  entrypoints: ["./src/main.tsx"],
-  outdir: "./build",
-})
-  .then((output) => {
-    console.info("\n\n built output", output);
+// TODO(noah): see if theres a `bun` way to do this
+// ^ i think bun accepts all the esbuild options so there should be
+await rm(BUILD_DIR, { force: true, recursive: true }).then(() =>
+  Bun.build({
+    entrypoints: ["./src/main.tsx"],
+    outdir: BUILD_DIR,
   })
-  .catch((e) => {
-    console.info("\n\n error in build", e);
-  });
+    .then((output) => {
+      console.info("\n\n built output", output);
+    })
+    .catch((e) => {
+      console.info("\n\n error in build", e);
+    })
+);
 
 function serveFromDir(config: {
   directory: string;
