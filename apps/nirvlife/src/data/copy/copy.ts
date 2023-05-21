@@ -11,13 +11,19 @@ export const slogan: CopyInterface = {
   copy: "NIRV-an-a whole lotta guts",
 };
 
+const nirvUrl = "https://nirv.ai";
 export const nirvai: CopyInterface = {
   copy: "NIRVai",
+  url: nirvUrl,
 };
 export const nirvaiRef: CopyRefInterface = {
   copy: "everything we do requires NIRV",
-  longform: ["NIRVai is a Lifestyle Management Platform"],
-  url: "https://nirv.ai",
+  longform: [
+    "NIRVai is a Lifestyle Management Platform",
+    "From Busy Bees to Corporate Cs, we help you take control",
+    "Managing projects or manifesting something new in your life.",
+  ],
+  url: nirvUrl,
 };
 
 export const tagline: CopyInterface = {

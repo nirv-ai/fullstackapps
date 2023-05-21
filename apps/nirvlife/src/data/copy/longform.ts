@@ -1,3 +1,3 @@
-export const getLongForm(id: string): string => {
-  return "i am a string"
-}
+export const getLongForm = (id: string): string => {
+  return "i am a string";
+};

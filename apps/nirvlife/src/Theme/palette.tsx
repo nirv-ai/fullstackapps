@@ -7,13 +7,7 @@ import type { Theme } from "@mui/material/styles";
 const primary = "#2f9ef9";
 const secondary = "#eb1e0b";
 const dark = "#141414";
-// const grey = "#2e2e2e";
-// #1d35e9
-// --red-1: #ff4d50;
-//   --yellow-1: #d7b428;
-//   --green-1: #52bf5d;
-//   --purple-1: #303197;
-//   --grey-1: #333536;
+
 export const palette: Theme["palette"] = {
   contrastThreshold: 2.9,
   tonalOffset: 0.1,

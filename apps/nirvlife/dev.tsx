@@ -6,7 +6,6 @@ const PROJECT_ROOT = import.meta.dir;
 const PUBLIC_DIR = path.resolve(PROJECT_ROOT, "public");
 const BUILD_DIR = path.resolve(PROJECT_ROOT, "build");
 
-// TODO(noah): doesnt clean dir
 await Bun.build({
   entrypoints: ["./src/main.tsx"],
   outdir: "./build",

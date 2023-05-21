@@ -26,8 +26,10 @@
     "@tanstack/react-query-devtools": "4.29.7",
     "@tanstack/react-query-persist-client": "4.29.7",
     "@tanstack/react-table": "8.9.1",
+    "classnames": "^2.3.2",
     "ky": "0.33.3",
     "react": "18.2.0",
+    "react-aria": "^3.24.0",
     "react-dom": "18.2.0",
     "react-ideal-image": "git@github.com:noahehall/react-ideal-image.git#72d7328",
     "react-query-kit": "^1.4.4",
@@ -38,6 +40,7 @@
     "web-vitals": "3.3.1"
   },
   "devDependencies": {
+    "@axe-core/react": "^4.7.1",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "@types/react-router-dom": "5.3.3",
@@ -48,13 +51,16 @@
     "postcss-flexbugs-fixes": "5.0.2",
     "prettier": "^2.8.8",
     "react-refresh": "0.14.0",
+    "turbo": "^1.9.8",
     "type-fest": "^3.10.0",
     "typescript": "beta"
   },
   "scripts": {
     "barrels": "barrelsby --config ./barrels.json",
-    "rm:cache": "bun pm cache rm",
     "dev": "rm -rf build/* && bun run --watch dev.tsx",
+    "postdev": "bun --hot src/main.tsx",
+    "rm:cache": "bun pm cache rm",
+    "test:types": "bunx tsc",
     "upgrade:bun": "bun upgrade --canary",
     "upgrade:deps": "bunx ncu -u && bun install"
   }
