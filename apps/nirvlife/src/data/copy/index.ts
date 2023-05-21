@@ -4,5 +4,6 @@
 
 export * from "./copy";
 export * from "./links";
+export * from "./longform";
 export * from "./team";
 export * from "./types";

@@ -26,7 +26,7 @@ export const joinTeamAdvisor: CopyLinkInterface = {
 };
 export const joinTeamBiz: CopyLinkInterface = {
   copy: ["co founder: phd sociocultural/economic anthropology"],
-  url: linkNirv.corpLinkedin.url, // this should be notion
+  url: linkNirv.corpLinkedin.url,
 };
 export const joinTeamDevs: CopyLinkInterface = {
   copy: [
@@ -34,7 +34,7 @@ export const joinTeamDevs: CopyLinkInterface = {
     "co founder: phd data science. data engineering and data science",
     "co founder: blockchain. signficant contribution to web3 community",
   ],
-  url: linkNirv.github.url, // this should be notion
+  url: linkNirv.devGithub.url,
 };
 export const joinTeamPreview: CopyCtaReveal = {
   copy: ["Do you live a busy lifestyle?", "We want to hear from you"],

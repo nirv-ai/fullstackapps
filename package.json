@@ -22,7 +22,7 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-config-react-app": "7.0.1",
     "husky": "8.0.2",
-    "turbo": "1.6.3",
+    "turbo": "^1.9.8",
     "typescript": "beta"
   },
   "type": "module"

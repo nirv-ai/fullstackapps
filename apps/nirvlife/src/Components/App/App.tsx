@@ -1,11 +1,9 @@
 import { Container, CssBaseline, ThemeProvider } from "@mui/material";
 import { Outlet, ScrollRestoration } from "react-router-dom";
 
-import { AppHeader } from "Components";
+import { AppHeader, AppFooter } from "Components";
 import { APP_KEY } from "data/constants";
 import { AppTheme } from "Theme";
-
-// <img src={"/img/logo_main.png"} className="App-logo" alt="logo" />
 
 export const App = () => {
   return (
@@ -15,6 +13,7 @@ export const App = () => {
       <Container disableGutters id="app-container" key="container">
         <Outlet />
       </Container>
+      <AppFooter />
       <ScrollRestoration key="scroll" />
     </ThemeProvider>
   );

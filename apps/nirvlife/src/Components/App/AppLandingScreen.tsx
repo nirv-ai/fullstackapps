@@ -1,16 +1,19 @@
 import { useTheme } from "@mui/material";
 
-import { AppAbout } from "./AppAbout";
-import { Img } from "Library";
+import { Img, TextCopy } from "Library";
+import { ctaStacks, nirvaiRef, taglineRef } from "data";
+// <img src={"/img/logo_main.png"} className="img" alt="nirvai" />
 
 const screenId = "app-landing-screen";
 export const AppLandingScreen = () => {
   const theme = useTheme();
 
   return (
-    <article>
+    <article id={screenId}>
       {/* <Img key="img" uris={["/img/girljumping.jpg"]} width={500} height={500} /> */}
-      <AppAbout key="appabout" />
+      <TextCopy data={ctaStacks[0][0]} />
+      <TextCopy data={nirvaiRef} longform />
+      <TextCopy data={taglineRef} full />
     </article>
   );
 };

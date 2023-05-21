@@ -3,6 +3,6 @@
  */
 
 export * from "./App";
-export * from "./AppAbout";
+export * from "./AppFooter";
 export * from "./AppHeader";
 export * from "./AppLandingScreen";
