@@ -12,7 +12,7 @@ export const AppLandingScreen = () => {
   // {/* <Img key="img" uris={["/img/girljumping.jpg"]} width={500} height={500} /> */}
   return (
     <ReactFP style={{}}>
-      <FPContainer style={{}} transitionTiming={700}>
+      <FPContainer>
         <FPItem
           style={{
             backgroundColor: "lime",
