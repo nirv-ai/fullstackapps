@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-import IdealImage from "react-ideal-image";
+import { IdealImage } from "react-idealer-image";
 import { useMemo, useEffect, useState } from "react";
 
 export interface ImgInterface {
@@ -28,13 +28,7 @@ export const Img: FC<ImgInterface> = ({
 
   return (
     <section {...props}>
-      <IdealImage
-        placeholder={{ color: "black" }}
-        alt={alt}
-        srcSet={srcSet}
-        height={height}
-        width={width}
-      />
+      <IdealImage alt={alt} srcSet={srcSet} height={height} width={width} />
     </section>
   );
 };

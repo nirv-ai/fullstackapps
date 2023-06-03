@@ -9,7 +9,6 @@ const screenId = "app-landing-screen";
 export const AppLandingScreen = () => {
   const theme = useTheme();
 
-  // {/* <Img key="img" uris={["/img/girljumping.jpg"]} width={500} height={500} /> */}
   return (
     <ReactFP style={{}}>
       <FPContainer>
@@ -22,6 +21,7 @@ export const AppLandingScreen = () => {
         >
           <article>
             <TextCopy data={ctaStacks[0][0]} />
+            <Img key="img" uris={["/img/girljumping.jpg"]} width={"100%"} />
           </article>
         </FPItem>
 
