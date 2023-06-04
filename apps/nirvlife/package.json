@@ -35,7 +35,7 @@
     "react-aria": "3.25.0",
     "react-dom": "18.2.0",
     "react-fullerpage": "github:noahehall/react-fullerpage",
-    "react-idealer-image": "github:noahehall/react-idealer-image#ede3c28",
+    "react-idealer-image": "github:noahehall/react-idealer-image",
     "react-query-kit": "1.4.5",
     "react-router-dom": "6.11.2",
     "react-waypoint": "10.3.0",
