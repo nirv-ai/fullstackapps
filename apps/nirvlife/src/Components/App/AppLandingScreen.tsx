@@ -2,8 +2,13 @@ import { useTheme } from "@mui/material";
 
 import { Img, TextCopy } from "Library";
 import { ctaStacks, nirvaiRef, taglineRef } from "data";
-import { ReactFP, FPContainer, FPItem } from "react-fullerpage";
-// <img src={"/img/logo_main.png"} className="img" alt="nirvai" />
+// import { ReactFP, FPContainer, FPItem } from "react-fullerpage";
+import {
+  ReactFP,
+  FPContainer,
+  FPItem,
+} from "../../../node_modules/react-fullerpage/src";
+import girljumping from "./imgs/girljumping.jpg";
 
 const screenId = "app-landing-screen";
 export const AppLandingScreen = () => {
@@ -11,6 +16,7 @@ export const AppLandingScreen = () => {
 
   return (
     <ReactFP style={{}}>
+      <div>hello</div>
       <FPContainer>
         <FPItem
           style={{
@@ -21,7 +27,8 @@ export const AppLandingScreen = () => {
         >
           <article>
             <TextCopy data={ctaStacks[0][0]} />
-            <Img key="img" uris={["/img/girljumping.jpg"]} width={"100%"} />
+            {/* <Img key="img" uris={["/img/girljumping.jpg"]} width={300} /> */}
+            <Img key="img" uris={[girljumping]} width={300} />
           </article>
         </FPItem>
 

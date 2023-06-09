@@ -1,9 +1,12 @@
 {
   "name": "nirvai-fullstackjs",
   "private": true,
+  "type": "module",
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
-  "type": "module"
+  "devDependencies": {
+    "bun-types": "canary"
+  }
 }

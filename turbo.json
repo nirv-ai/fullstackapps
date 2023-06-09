@@ -3,6 +3,9 @@
   // ^ pretty sure this is just a copypasta from nirv
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
+    "dev:nirvlife": {
+      "outputs": ["build"]
+    },
     "start": {
       "dependsOn": ["^types", "types"]
     },
@@ -12,11 +15,11 @@
       "cache": true,
       "inputs": ["src/**/*.tsx", "src/**/*.ts", ".eslintrc.cjs"]
     },
-    "lint": {},
     "eslint": {
       "cache": true,
       "inputs": [".eslintrc.cjs"]
     },
+    "lint": {},
     "pretty": {}
   }
 }

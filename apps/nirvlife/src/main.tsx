@@ -1,7 +1,7 @@
 import { reportWebVitals } from "reportWebVitals";
 import React, { StrictMode } from "react";
 import ReactDOM, { createRoot } from "react-dom/client";
-
+console.info("lol");
 import { QueryProvider } from "./Api";
 import { Router } from "Router";
 
