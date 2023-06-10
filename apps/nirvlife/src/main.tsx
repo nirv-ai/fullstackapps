@@ -1,7 +1,7 @@
 import { reportWebVitals } from "reportWebVitals";
 import React, { StrictMode } from "react";
 import ReactDOM, { createRoot } from "react-dom/client";
-
+console.info("lol");
 import { QueryProvider } from "./Api";
 import { Router } from "Router";
 
@@ -19,7 +19,5 @@ root.render(
   </StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals(console.log);

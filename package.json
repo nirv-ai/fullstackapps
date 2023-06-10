@@ -1,29 +1,12 @@
 {
   "name": "nirvai-fullstackjs",
   "private": true,
+  "type": "module",
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
-  "scripts": {
-    "pkgfix": "manypkg fix"
-  },
-  "dependencies": {
-    "@babel/core": "7.20.5",
-    "@babel/plugin-syntax-flow": "7.18.6",
-    "@babel/plugin-transform-react-jsx": "7.19.0",
-    "@lukemorales/query-key-factory": "^1.2.0",
-    "@manypkg/cli": "0.19.2",
-    "@tanstack/eslint-plugin-query": "4.29.4",
-    "@typescript-eslint/eslint-plugin": "5.46.1",
-    "@typescript-eslint/parser": "5.46.1",
-    "bun-types": "canary",
-    "eslint": "8.29.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-config-react-app": "7.0.1",
-    "husky": "8.0.2",
-    "turbo": "^1.9.8",
-    "typescript": "beta"
-  },
-  "type": "module"
+  "devDependencies": {
+    "bun-types": "canary"
+  }
 }
