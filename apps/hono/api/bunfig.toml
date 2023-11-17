@@ -1,0 +1,10 @@
+telemetry = false
+
+[install]
+exact = true
+auto = "auto"
+
+[test]
+preload = ["./src/test/setup.ts"]
+coverage = true
+root = "src"
