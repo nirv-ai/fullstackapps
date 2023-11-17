@@ -17,7 +17,7 @@ async function serveFromDir(config: {
   directory: string;
   path: string;
 }): Promise<Response | null> {
-  let basePath = path.join(config.directory, config.path);
+  const basePath = path.join(config.directory, config.path);
   const suffixes = ["", ".html", "index.html"];
 
   for (const suffix of suffixes) {
