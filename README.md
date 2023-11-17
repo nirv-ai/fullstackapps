@@ -3,6 +3,10 @@
 - standard application development @ nirv.ai
 - wouldnt trust anything in this repo while **this line** exists
 
+## update Q4 2023
+
+- dunno where i'm at with this, wouldnt trust anything except apps/hono
+
 ## TLDR
 
 - HARD ADs: NIRV uses nimlang and Bun... for all application development
