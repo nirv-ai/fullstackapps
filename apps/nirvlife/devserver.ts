@@ -1,31 +1,23 @@
 import * as path from "path";
 import type { ServeOptions } from "bun";
-import { rm, stat } from "node:fs/promises";
+import { stat } from "node:fs/promises";
+import { buildApp } from "./devbuilder";
 
 const PROJECT_ROOT = import.meta.dir;
 const PUBLIC_DIR = path.resolve(PROJECT_ROOT, "public");
 const BUILD_DIR = path.resolve(PROJECT_ROOT, "build");
 
-// TODO(noah): see if theres a `bun` way to do this
-// ^ i think bun accepts all the esbuild options so there should be
-await rm(BUILD_DIR, { force: true, recursive: true }).then(() =>
-  Bun.build({
-    entrypoints: ["./src/main.tsx"],
-    outdir: BUILD_DIR,
-  })
-    .then((output) => {
-      console.info("\n\n built output", output);
-    })
-    .catch((e) => {
-      console.info("\n\n error in build", e);
-    })
-);
+// @see https://bun.sh/docs/bundler#outputs
+const { outputs, success, logs, ...buildData } = await buildApp();
+
+console.info(`built success ${success}: total files`, outputs.length);
+// generally we want to figure out how to serve assets
 
 async function serveFromDir(config: {
   directory: string;
   path: string;
 }): Promise<Response | null> {
-  let basePath = path.join(config.directory, config.path);
+  const basePath = path.join(config.directory, config.path);
   const suffixes = ["", ".html", "index.html"];
 
   for (const suffix of suffixes) {
@@ -42,7 +34,24 @@ async function serveFromDir(config: {
 }
 
 export default {
+  development: true,
+  error(e: Error) {
+    // for server side errors
+    return new Response(`<pre>${e}\n${e.stack}</pre>`, {
+      headers: {
+        "Content-Type": "text/html",
+      },
+    });
+  },
   async fetch(request) {
+    if (!success) {
+      for (const message of logs) {
+        // Bun will pretty print the message object
+        console.error(message);
+      }
+      throw new Error(`build failed`);
+    }
+
     let reqPath = new URL(request.url).pathname;
     console.log(request.method, reqPath);
     if (reqPath === "/") reqPath = "/index.html";
